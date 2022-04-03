@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editAudioTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/audio_set_recording_name"
+        android:translationY="-30dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_compression_options"
+        android:textSize="16sp"
+        android:translationY="-10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="368dp" >
+
+        <RadioButton
+            android:id="@+id/audio_radio_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/mp3" />
+
+        <RadioButton
+            android:id="@+id/audio_radio_Button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/amr" />
+
+        <RadioButton
+            android:id="@+id/audio_radio_Button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/no_compression" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/audio_setname_done"
+        android:translationY="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editVideoTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/video_set_recording_name"
+        android:translationY="-30dp" />
+
+    <TextView
+        android:id="@+id/video_compression_text"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="@string/video_compression_text"
+        android:textSize="16sp"
+        android:translationY="-10dp" />
+
+    <RadioGroup
+        android:id="@+id/video_radio"
+        android:layout_width="match_parent"
+        android:layout_height="368dp" >
+
+        <RadioButton
+            android:id="@+id/video_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/video_radioButton" />
+
+        <RadioButton
+            android:id="@+id/video_radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/video_radioButton2" />
+
+        <RadioButton
+            android:id="@+id/video_radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/video_radioButton3" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/audio_save_recording"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/video_setname_done"
+        android:translationY="10dp" />
+
+</LinearLayout>
