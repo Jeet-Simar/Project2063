@@ -13,21 +13,22 @@ o List of completed features
 • Supported API levels
 • Test cases / test plans run
 
-To start give the camera, microphone, and media permissions to the JGC application.
+#To start:
+give the camera, microphone, and media permissions to the JGC application.
 Make sure that the gmail is given media permissions
 
-Release Notes and known issues:
+#Release Notes and known issues:
 
-Completed features:
+#Completed features:
 record audio, compress audio, change recorded audio file name, play audio, share multiple audio by clicking on the check box and then the share button, record video, compress video, change recorded video file name, play video, share multiple video by clicking on the check box and then the share button.
 
-Supported API levels:
+#Supported API levels:
 
-Test cases/ test plans run:
+#Test cases/ test plans run:
 
-Scenarios to test:
+#Scenarios to test:
 
-Device limitations for the project:
+#Device limitations for the project:
 Needs to have a registered gmail account, a google account, a microphone, a camera.
 
 Please note any device limitations in the project documentation included with the app.
