@@ -4,14 +4,18 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.File;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Executors;
 
 import mobiledev.unb.ca.jgc.MyAdapter_audio;
+import mobiledev.unb.ca.jgc.MyAdapter_video;
 import mobiledev.unb.ca.jgc.model.AudioInfo;
 
 public class LoadDataTask_audio {
@@ -20,9 +24,12 @@ public class LoadDataTask_audio {
 
     private RecyclerView recyclerView;
     private SharedPreferences sharedPreferences;
-
-    public LoadDataTask_audio(AppCompatActivity activity) {
+    private List <File> fileList;
+    private MyAdapter_audio myAdapterAudio;
+    public LoadDataTask_audio(AppCompatActivity activity,List <File> fileList) {
         this.activity = activity;
+        this.fileList =fileList;
+        this.myAdapterAudio = null;
         appContext = activity.getApplicationContext();
     }
 
@@ -42,15 +49,35 @@ public class LoadDataTask_audio {
 
             // TODO
             //  Load the data from the JSON assets file and return the list of cities
-            JsonUtils_audio jsonUtils = new JsonUtils_audio(appContext);
-            List<AudioInfo> audio = jsonUtils.getAudio();
+            //File f = new File(path);
+            // File file[] = f.listFiles();
+            //  List <File> fileList = Arrays.asList(f.listFiles());
+            //Log.i("test",fileList.size()+"test");
+            // Log.i("test",path+"   test");
+            // int i;
+            // for (i=0;i<fileList.size();i++) {
+            //Log.i("test", fileList.size() + "test");
+            ///fileList.get(i);
+            //  Log.i("test",fileList.get(i)+"test");
+            // }
+
+            //JsonUtils_audio jsonUtils = new JsonUtils_audio(appContext);
+            // List<AudioInfo> audio = jsonUtils.getAudio();
             // TODO
             //  Use result to set the adapter using the setupRecyclerView method below
-            setupRecyclerView(audio);
+            myAdapterAudio =new MyAdapter_audio(activity, fileList, sharedPreferences);
+            //setupRecyclerView(fileList);
+            setupRecyclerView(myAdapterAudio);
         });
     }
 
-    private void setupRecyclerView(List<AudioInfo> audioInfoList) {
-        recyclerView.setAdapter(new MyAdapter_audio(activity, audioInfoList, sharedPreferences));
+    /* private void setupRecyclerView( List<File> fileList) {
+         recyclerView.setAdapter(new MyAdapter_video(activity, fileList, sharedPreferences));
+     }*/
+    private void setupRecyclerView(MyAdapter_audio myAdapterAudio) {
+        recyclerView.setAdapter(myAdapterAudio);
+    }
+    public MyAdapter_audio getMyAdapterAudio(){
+        return myAdapterAudio;
     }
 }

@@ -28,34 +28,29 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="368dp" >
-
         <RadioButton
-            android:id="@+id/audio_radio_Button"
+            android:id="@+id/ThreeGP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:text="@string/mp3" />
-
+            android:text="3GP" />
         <RadioButton
-            android:id="@+id/audio_radio_Button2"
+            android:id="@+id/amr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/amr" />
-
         <RadioButton
             android:id="@+id/audio_radio_Button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:text="@string/no_compression" />
+            android:text="No Compression (Default MP3)" />
     </RadioGroup>
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/done_button"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="@string/audio_setname_done"
         android:translationY="10dp" />
-
 </LinearLayout>

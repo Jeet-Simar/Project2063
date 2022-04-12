@@ -43,4 +43,8 @@
     <string name="video_set_recording_name">Set_recording_name</string>
     <string name="audio_setname_done">Done</string>
     <string name="video_setname_done">Done</string>
+    <string name="paused_play">paused_play</string>
+    <string name="play_play">play_play</string>
+    <string name="done">Done</string>
+    <string name="to">TO</string>
 </resources>
