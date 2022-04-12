@@ -19,7 +19,7 @@ record audio, compress audio, change recorded audio file name, play audio, share
 # Scenarios to test:
 
 # Device limitations for the project:
-Needs to have a registered gmail account, a microphone, a camera.
+The device needs to have a registered gmail account, a microphone, a camera.
 
 Please note any device limitations in the project documentation included with the app.
 
