@@ -18,6 +18,7 @@ give the camera, microphone, and media permissions to the JGC application.
 Make sure that the gmail is given media permissions
 
 # Release Notes and known issues:
+Certain devices have a known issue of not displaying certain buttons when playing either a video or an audio.
 
 # Completed features:
 record audio, compress audio, change recorded audio file name, play audio, share multiple audio by clicking on the check box and then the share button, record video, compress video, change recorded video file name, play video, share multiple video by clicking on the check box and then the share button.
