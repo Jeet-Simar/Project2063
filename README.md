@@ -2,8 +2,8 @@
  For UNB CS2063
 
 # To start:
-Give the camera, microphone, and media permissions to the JGC application.
-Give the gmail media permissions. 
+Give the camera, microphone, and media permissions to the JGC application through phones setting.
+Give the gmail media permissions through settings. 
 A gmail account is needed to be able to make the sharing functionalities work. 
 
 # Known issues:
