@@ -4,24 +4,13 @@
 # To start:
 give the camera, microphone, and media permissions to the JGC application.
 Give the gmail is given media permissions. 
-A gmail account is needed to be able to make the sharing functionnalities work. 
+A gmail account is needed to be able to make the sharing functionalities work. 
 
-# Release Notes and known issues:
+# Known issues:
 Certain devices have a known issue of not displaying certain buttons when playing either a video or an audio.
-
-# Completed features:
-record audio, compress audio, change recorded audio file name, play audio, share multiple audio by clicking on the check box and then the share button, record video, compress video, change recorded video file name, play video, share multiple video by clicking on the check box and then the share button.
 
 # Supported API levels:
 
-# Test cases/ test plans run:
-
-# Scenarios to test:
 
 # Device limitations for the project:
 The device needs to have a registered gmail account, a microphone, a camera.
-
-Please note any device limitations in the project documentation included with the app.
-
-
-o What scenarios would you like me to test?
