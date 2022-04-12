@@ -3,7 +3,7 @@
 
 # To start:
 Give the camera, microphone, and media permissions to the JGC application.
-Give the gmail is given media permissions. 
+Give the gmail media permissions. 
 A gmail account is needed to be able to make the sharing functionalities work. 
 
 # Known issues:
